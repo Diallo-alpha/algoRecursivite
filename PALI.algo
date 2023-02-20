@@ -1,0 +1,18 @@
+ALGORITHM PALI
+FUNCTION pali(mot) : BOOLEAN
+
+VAR
+    plindrom: STRING;
+    palindrom:= " ";
+BEGIN
+    write("donner un mots ");
+    read(palindrom);
+    FOR i mot.length  i>=0 STEP i-- DO
+    palindrom = palindrom + mot[i]
+    END_FOR
+    FOR i=0 i<mot.length STEP i++  DO
+    if(mot[i] != palindrom)
+        returne, false
+    END_FOR
+    return, true
+EN
